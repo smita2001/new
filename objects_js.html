@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objects in JavaScript</title>
+</head>
+<style type="text/css">
+	body{
+		 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #d16b93, #d86ea1, #dd72b0, #e277bf, #e47dd0, #e07bd9, #da7ae2, #d37aeb, #c472ee, #b36af2, #9e64f7, #855ffb);
+	}
+</style>
+<body>
+	<p><b>Creating Objects in JavaScript</b></p>
+<script type="text/javascript">
+	function Person(FirstName,LastName,OfficeAddress){
+		this.FirstName=FirstName;
+		this.LastName=LastName;
+		this.OfficeAddress=OfficeAddress;
+	}
+	let Person1=new Person('Smita','Kumari','IBM_Hyderabad');
+	let Person2=new Person('Anamika','Das','ISRO_Bangalore');
+	let Person3=new Person('Anju','Singh','TCS_Mumbai');
+	console.log("Person-1 Details......");
+	console.log(Person1.FirstName+" "+Person1.LastName+" "+Person1.OfficeAddress);
+	console.log("Person-2 Details......");
+	console.log(Person2.FirstName+" "+Person2.LastName+" "+Person2.OfficeAddress);
+	console.log("Person-3 Details......");
+	console.log(Person3.FirstName+" "+Person3.LastName+" "+Person3.OfficeAddress);
+</script>
+</body>
+</html>
